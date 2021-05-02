@@ -3,6 +3,7 @@
     color: #0B141D;
   }
   body{
+    background-color: #E1EBF4;
     margin: 0;
   }
   .contanier {
@@ -45,6 +46,45 @@ header .logo {
   top: 40px;
   left: 33px;
   font-size: 24px;
-  text-shadow: 5px 5px #f8d930;
+  text-shadow: 1px 1px #f8d930;
 
+}
+.icons {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.icons ul li {
+  display: inline;
+  padding: 0 7;
+}
+.icons a {
+  text-decoration: none;
+}
+/* razobratsia s perekraskoi iconok */
+.title{
+  position: absolute;
+  top: 207px;
+  left: 33px;
+}
+.title h1 {
+  font-size: 80px;
+  text-shadow: 2px 2px #f8d930;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 0;
+}
+.title p {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+.title a{
+  background-color: #f8d930;
+  padding: 18px 71px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.title a:hover{
+  background-color: #fded92;
 }
