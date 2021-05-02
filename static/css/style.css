@@ -1,15 +1,15 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    color: #0B141D;
-  }
-  body{
-    background-color: #E1EBF4;
-    margin: 0;
-  }
-  .contanier {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  font-family: "Montserrat", sans-serif;
+  color: #0b141d;
+}
+body {
+  background-color: #e1ebf4;
+  margin: 0;
+}
+.contanier {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   background-image: url("../images/fon-top.jpg");
   background-size: cover;
@@ -37,8 +37,8 @@ header nav ul li a {
   text-decoration: none;
   font-size: 18px;
 }
-header nav ul li a:hover{
-  text-decoration: underline ;
+header nav ul li a:hover {
+  text-decoration: underline;
   background-color: tomato;
 }
 header .logo {
@@ -47,7 +47,6 @@ header .logo {
   left: 33px;
   font-size: 24px;
   text-shadow: 1px 1px #f8d930;
-
 }
 .icons {
   position: absolute;
@@ -58,11 +57,14 @@ header .logo {
   display: inline;
   padding: 0 7;
 }
-.icons a {
+header section.icons a {
   text-decoration: none;
 }
-/* razobratsia s perekraskoi iconok */
-.title{
+header section.icons svg:hover {
+  fill: tomato;
+}
+
+.title {
   position: absolute;
   top: 207px;
   left: 33px;
@@ -78,13 +80,93 @@ header .logo {
   font-size: 30px;
   margin-bottom: 70px;
 }
-.title a{
+.title a {
   background-color: #f8d930;
   padding: 18px 71px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 20px;
 }
-.title a:hover{
+.title a:hover {
   background-color: #fded92;
+}
+/* Блок обо мне */
+section.about {
+  background-color: #fff;
+  height: 750px;
+}
+/* Левая часть блока */
+section.about div.left {
+  float: left;
+  width: 750px;
+  height: 750px;
+  position: relative;
+}
+section.about div.left div.men {
+  width: 457px;
+  height: 740px;
+  background-image: url("../images/men.png");
+  background-position-x: -210px;
+  position: absolute;
+  bottom: 0px;
+}
+section.about div.left div.number-30 {
+  position: absolute;
+  width: 160px;
+  height: 70px;
+  top: 220px;
+  left: 370px;
+}
+section.about div.left div.number-30 div.text-top {
+position: absolute;
+top: 0px;
+font-size: 14px;
+}
+
+section.about div.left div.number-30 div.num {
+  font-weight: 900;
+  font-size: 80px;
+  -webkit-text-stroke: 1px #0b141d;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  line-height: 60px;
+}
+section.about div.left div.number-30 div.text-bottom {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 14px;
+}
+/* Правая часть блока */
+section.about div.right {
+  width: 450px;
+  float: left;
+  position: relative;
+  height: 100%;
+}
+section.about div.right h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  margin: 90px 0 100px 0;
+}
+section.about div.right p {
+  margin-bottom: 60px;
+}
+section.about div.right p.description {
+  font-size: 30px;
+  line-height: 140%;
+}
+section.about div.right div.list {
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  background-image: url("../images/list.jpg");
+  background-position-y: 0px;
+  right: 0px;
+  bottom: 0px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
