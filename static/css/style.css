@@ -1,9 +1,12 @@
+:root {
+  --color-yellow: #f8d930;
+}
 * {
   font-family: "Montserrat", sans-serif;
   color: #0b141d;
 }
 body {
-  background-color: #e1ebf4;
+  background-color: #aac8e2;
   margin: 0;
 }
 .contanier {
@@ -46,7 +49,7 @@ header .logo {
   top: 40px;
   left: 33px;
   font-size: 24px;
-  text-shadow: 1px 1px #f8d930;
+  text-shadow: 1px 1px var(--color-yellow);
 }
 .icons {
   position: absolute;
@@ -71,7 +74,7 @@ header section.icons svg:hover {
 }
 .title h1 {
   font-size: 80px;
-  text-shadow: 2px 2px #f8d930;
+  text-shadow: 2px 2px var(--color-yellow);
   font-weight: 600;
   font-style: normal;
   margin-bottom: 0;
@@ -80,14 +83,16 @@ header section.icons svg:hover {
   font-size: 30px;
   margin-bottom: 70px;
 }
-.title a {
-  background-color: #f8d930;
+.title a,
+.btn {
+  background-color: var(--color-yellow);
   padding: 18px 71px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 20px;
 }
-.title a:hover {
+.title a:hover,
+.btn:hover {
   background-color: #fded92;
 }
 /* Блок обо мне */
@@ -119,9 +124,9 @@ section.about div.left div.number-30 {
   left: 385px;
 }
 section.about div.left div.number-30 div.text-top {
-position: absolute;
-top: 0px;
-font-size: 14px;
+  position: absolute;
+  top: 0px;
+  font-size: 14px;
 }
 
 section.about div.left div.number-30 div.num {
@@ -146,7 +151,7 @@ section.about div.left div.number-30 div.text-bottom {
   width: 250px;
   height: 100px;
   top: 380px;
-  left: 425px; 
+  left: 425px;
 }
 .top-title {
   position: absolute;
@@ -228,4 +233,268 @@ section.about div.right div.list {
   right: 0px;
   bottom: 0px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+section.slider {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/slide1.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+main {
+  width: 100%;
+  background-color: #fff;
+}
+main h2 {
+  margin: 0;
+  padding: 90px 0 30px 742px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+}
+table {
+  width: 96%;
+  margin: 0 20px;
+}
+th {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+td,
+th {
+  border-bottom: var(--color-yellow) 2px solid;
+}
+
+td {
+  height: 117px;
+}
+.muted {
+  color: #b4b4b4;
+}
+article.foto {
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+}
+article.foto .left {
+  width: 700px;
+  /* height: 500px; */
+  float: left;
+}
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.foto1,
+.foto2,
+.foto3,
+.foto4,
+.foto5,
+.foto6 {
+  margin-right: 14px;
+  height: 200px;
+}
+.left .foto1 {
+  width: 262px;
+  background-image: url("../images/img1.jpg");
+  background-position-x: center;
+}
+.left .foto2 {
+  width: 183px;
+  background-image: url("../images/img2.jpg");
+  background-position-x: center;
+}
+.left .foto3 {
+  width: 219px;
+  background-image: url("../images/img3.jpg");
+}
+.left .foto4 {
+  width: 341px;
+  background-image: url("../images/img4.jpg");
+  background-position-x: center;
+}
+.left .foto5 {
+  width: 183px;
+  background-image: url("../images/img5.jpg");
+}
+.left .foto6 {
+  width: 140px;
+  background-image: url("../images/img6.jpg");
+  background-position-x: center;
+}
+article.foto .right {
+  float: right;
+  width: 480px;
+}
+article.foto .right ul {
+  list-style-type: none;
+}
+article.foto .right p {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+article.blog {
+  background-color: #fff;
+  height: 1700px;
+}
+
+article.blog .left {
+  background-color: #fff;
+  width: calc(1200px - 809px);
+  float: left;
+}
+article.blog h3 {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+article.blog h3,
+article.blog p {
+  margin-left: 30px;
+}
+
+article.blog .right {
+  width: 809px;
+  height: 304px;
+  float: right;
+  background-image: url("../images/plan1.jpg");
+}
+.height {
+  clear: both;
+  height: 100px;
+  width: 100%;
+}
+
+article.blog .left-2 {
+  float: left;
+  width: 727px;
+  height: 454px;
+  background-image: url("../images/plan2.jpg");
+}
+article.blog .right-2 {
+  float: right;
+  width: calc(1200px - 727px);
+}
+article.blog .right-2 h3,
+article.blog .right-2 p {
+  margin-left: 76px;
+  margin-right: 123px;
+}
+article.blog .right-3 {
+  float: right;
+  width: 425px;
+  height: 543px;
+  background-image: url("../images/plan3.jpg");
+  background-position-x: center;
+}
+article.blog .left-3 h3 {
+  margin-top: 100px;
+}
+
+article.blog .left-3 {
+  float: left;
+  width: calc(1200px - 425px);
+}
+article.blog .left-3 h3,
+article.blog .left-3 p {
+  margin-left: 390px;
+}
+article.blog .left-3 div.list-left {
+  position: absolute;
+  width: 236px;
+  height: 257px;
+  background-image: url("../images/list.jpg");
+}
+aside {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-image: url("../images/fon-footer.jpg");
+}
+.form {
+  position: absolute;
+  right: 0px;
+  width: 500px;
+  margin-top: 170px;
+}
+.form div {
+  padding: 10px 0 10px 0;
+}
+.form input {
+  color: var(--color-yellow);
+  background: none;
+  border: var(--color-yellow) 2px solid;
+  width: 80%;
+  height: 25px;
+  padding: 5px;
+  font-size: 16px;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+.form textarea {
+  color: var(--color-yellow);
+  background: none;
+  border: var(--color-yellow) 2px solid;
+  width: 80%;
+  padding: 5px;
+  font-size: 16px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #277eb8;
+}
+.form input.submit {
+  /* padding: 15px 30px 15px 30px;  */
+  height: 50px;
+  width: 82%;
+  color: var(--color-yellow);
+  background: none;
+  border: var(--color-yellow) 2px solid;
+  font-size: 20px;
+}
+footer {
+  background: #0C1729;
+width: 100%;
+height: 230px;
+display: flex;
+}
+footer div,
+footer div p,
+footer div a {
+  width: 100%;
+  color: var(--color-yellow);
+  /* border: olivedrab 2px solid; */
+}
+.logo-footer,
+footer div p,
+footer ul,
+.visa {
+  margin-top: 60px;
+}
+.logo-footer {
+  font-size: 24px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+footer a {
+  text-decoration: none;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  padding-bottom: 10px;
+}
+.visa {
+  height: 50px;
+  margin-left: 40px;
+  fill: var(--color-yellow);
 }
